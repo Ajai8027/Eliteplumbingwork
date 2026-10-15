@@ -31,6 +31,7 @@
   function closeNav() {
     if (!nav) return;
     nav.classList.remove("is-open");
+    document.body.classList.remove("nav-open");
     if (navToggle) navToggle.setAttribute("aria-expanded", "false");
     document.body.style.overflow = "";
   }
@@ -39,6 +40,7 @@
     navToggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.classList.toggle("nav-open", open);
       document.body.style.overflow = open ? "hidden" : "";
     });
 
@@ -135,6 +137,16 @@
       }
     });
   });
+
+  function syncFaqHeights() {
+    faqItems.forEach(function (item) {
+      if (!item.classList.contains("is-open")) return;
+      var panel = item.querySelector(".faq__a");
+      if (panel) panel.style.maxHeight = panel.scrollHeight + "px";
+    });
+  }
+  window.addEventListener("resize", syncFaqHeights);
+  window.addEventListener("orientationchange", syncFaqHeights);
 
   /* ---------- Gallery lightbox ---------- */
   var gallery = document.getElementById("gallery-grid");
