@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" width="260" height="64" role="img" aria-label="Elite Plumbing Work logo">
+  <defs>
+    <linearGradient id="epwDrop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22C7E6"/>
+      <stop offset="1" stop-color="#1B6DE0"/>
+    </linearGradient>
+    <linearGradient id="epwText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F2A4A"/>
+      <stop offset="1" stop-color="#0B2545"/>
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(6,6)">
+    <path d="M26 2c0 0-20 22.4-20 34.5C6 48.1 15 56 26 56s20-7.9 20-19.5C46 24.4 26 2 26 2z" fill="url(#epwDrop)"/>
+    <path d="M26 2c0 0-20 22.4-20 34.5C6 48.1 15 56 26 56s20-7.9 20-19.5C46 24.4 26 2 26 2z" fill="none" stroke="#0B2545" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M16.5 30.5l6.5 6.5 12-13.5" fill="none" stroke="#ffffff" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="26" cy="41" r="3.1" fill="#0B2545" opacity="0.5"/>
+  </g>
+
+  <g transform="translate(74,0)" fill="url(#epwText)" font-family="'Segoe UI', Arial, sans-serif">
+    <text x="0" y="30" font-size="24" font-weight="800" letter-spacing="0.5">ELITE</text>
+    <text x="0" y="51" font-size="15.5" font-weight="600" letter-spacing="3.2" fill="#1B6DE0">PLUMBING WORK</text>
+  </g>
+</svg>
