@@ -1,53 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace https://www.eliteplumbingwork.in/ with the live domain once the site is hosted. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.eliteplumbingwork.in/</loc>
+    <loc>https://elite-plumbing-work.pages.dev/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/leak-detection-pipe-repair.html</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/leak-detection-pipe-repair.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/drain-blockage-removal.html</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/drain-blockage-removal.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/bathroom-plumbing.html</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/bathroom-plumbing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/kitchen-plumbing.html</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/kitchen-plumbing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/tap-faucet-mixer-fitting.html</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/tap-faucet-mixer-fitting.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/toilet-flush-repair.html</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/toilet-flush-repair.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/water-tank-plumbing.html</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/water-tank-plumbing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.eliteplumbingwork.in/services/new-pipe-installation.html</loc>
+    <loc>https://elite-plumbing-work.pages.dev/services/new-pipe-installation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
