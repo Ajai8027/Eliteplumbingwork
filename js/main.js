@@ -6,6 +6,16 @@
 
   var WHATSAPP = "919840055014";
 
+  /* ---------- Always load at top (unless a #hash is present) ---------- */
+  window.addEventListener("pageshow", function () {
+    if (window.location.hash) return;
+    var root = document.documentElement;
+    var prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo(0, 0);
+    root.style.scrollBehavior = prev;
+  });
+
   /* ---------- Header scroll state ---------- */
   var header = document.getElementById("siteHeader");
   var toTop = document.getElementById("toTop");
