@@ -7,14 +7,33 @@
   var WHATSAPP = "919840055014";
 
   /* ---------- Always load at top (unless a #hash is present) ---------- */
-  window.addEventListener("pageshow", function () {
-    if (window.location.hash) return;
+  var startHash = window.location.hash;
+
+  function hasHashTarget() {
+    if (!startHash || startHash.length < 2) return false;
+    if (startHash.indexOf("#:~:") === 0) return false;
+    try { return !!document.getElementById(startHash.slice(1)); } catch (e) { return false; }
+  }
+
+  function resetScroll() {
+    if (hasHashTarget()) return;
     var root = document.documentElement;
     var prev = root.style.scrollBehavior;
     root.style.scrollBehavior = "auto";
     window.scrollTo(0, 0);
+    if (document.body) document.body.scrollTop = 0;
     root.style.scrollBehavior = prev;
-  });
+  }
+
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+
+  window.addEventListener("pageshow", resetScroll);
+  window.addEventListener("load", resetScroll);
+  document.addEventListener("DOMContentLoaded", resetScroll);
+
+  /* Beat late native restoration on mobile (Android Chrome / iOS Safari) */
+  requestAnimationFrame(resetScroll);
+  [0, 60, 150, 300].forEach(function (ms) { setTimeout(resetScroll, ms); });
 
   /* ---------- Header scroll state ---------- */
   var header = document.getElementById("siteHeader");
